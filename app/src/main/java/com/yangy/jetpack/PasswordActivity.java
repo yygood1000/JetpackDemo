@@ -21,6 +21,7 @@ public class PasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(PasswordActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

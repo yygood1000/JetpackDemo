@@ -37,12 +37,13 @@ public class RegisterFragment extends Fragment {
                                 .setName(mEtAccount.getEditableText().toString())
                                 .setEmail(mEtEmail.getEditableText().toString());
                 findNavController(RegisterFragment.this).navigate(action);
+                getActivity().finish();
             }
         });
         view.findViewById(R.id.txt_cancel).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               findNavController(RegisterFragment.this).navigateUp();
+                findNavController(RegisterFragment.this).navigateUp();
             }
         });
     }
