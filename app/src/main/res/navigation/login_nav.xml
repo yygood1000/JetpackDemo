@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcome_fragment">
+    <!--app:startDestination   默认的起始位置-->
+
+    <fragment
+        android:id="@+id/welcome_fragment"
+        android:name="com.yangy.jetpack.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_login"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_welcome_to_register"
+            app:destination="@id/register_fragment"
+            app:enterAnim="@anim/slide_in_right_80"
+            app:exitAnim="@anim/alpha_out"
+            app:popEnterAnim="@anim/alpha_in"
+            app:popExitAnim="@anim/slide_out_right_and_alphe" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.yangy.jetpack.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.yangy.jetpack.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/next_to_input_password"
+            app:destination="@id/passwordActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/passwordActivity"
+        android:name="com.yangy.jetpack.PasswordActivity"
+        android:label="activity_password"
+        tools:layout="@layout/activity_password">
+        <argument
+            android:name="name"
+            android:defaultValue="yangy"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            android:defaultValue="yygood1000@gmail.com"
+            app:argType="string" />
+    </activity>
+</navigation>
