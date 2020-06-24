@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/welcome_fragment"
-        android:name="com.yangy.jetpack.WelcomeFragment"
+        android:name="com.yangy.jetpack.ui.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome">
         <action
@@ -24,12 +24,12 @@
     </fragment>
     <fragment
         android:id="@+id/login_fragment"
-        android:name="com.yangy.jetpack.LoginFragment"
+        android:name="com.yangy.jetpack.ui.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.yangy.jetpack.MainActivity"
+        android:name="com.yangy.jetpack.ui.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <navigation
@@ -37,7 +37,7 @@
         app:startDestination="@id/register_fragment">
         <fragment
             android:id="@+id/register_fragment"
-            android:name="com.yangy.jetpack.RegisterFragment"
+            android:name="com.yangy.jetpack.ui.RegisterFragment"
             android:label="fragment_register"
             tools:layout="@layout/fragment_register">
 
@@ -48,7 +48,7 @@
 
         <activity
             android:id="@+id/passwordActivity"
-            android:name="com.yangy.jetpack.PasswordActivity"
+            android:name="com.yangy.jetpack.ui.PasswordActivity"
             android:label="activity_password"
             tools:layout="@layout/activity_password">
             <argument

@@ -1,4 +1,4 @@
-package com.yangy.jetpack;
+package com.yangy.jetpack.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.yangy.jetpack.R;
 
 public class PasswordActivity extends AppCompatActivity {
 

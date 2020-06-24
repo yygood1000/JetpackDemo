@@ -1,4 +1,4 @@
-package com.yangy.jetpack;
+package com.yangy.jetpack.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.yangy.jetpack.R;
 
 import static androidx.navigation.fragment.NavHostFragment.findNavController;
 

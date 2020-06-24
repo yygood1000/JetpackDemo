@@ -1,8 +1,10 @@
-package com.yangy.jetpack;
+package com.yangy.jetpack.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.yangy.jetpack.R;
 
 public class LoginActivity extends AppCompatActivity {
 
